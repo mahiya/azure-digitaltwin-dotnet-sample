@@ -1,0 +1,6 @@
+.vs
+bin
+obj
+*.csproj.user
+settings.json
+*.sln

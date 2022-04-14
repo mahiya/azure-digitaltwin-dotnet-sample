@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:sample:Building;1",
+  "@type": "Interface",
+  "displayName": "Building",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "name",
+      "schema": "string"
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasPart",
+      "displayName": {
+        "en": "has part"
+      },
+      "target": "dtmi:sample:Floor;1"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "@id": "dtmi:sample:Room;1",
+  "@type": "Interface",
+  "displayName": "Room",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "name",
+      "schema": "string"
+    },
+    {
+      "@type": "Relationship",
+      "name": "isPartOf",
+      "displayName": {
+        "en": "is part of"
+      },
+      "target": "dtmi:sample:Floor;1",
+      "maxMultiplicity": 1
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "is location of"
+      },
+      "name": "isLocationOf"
+    }
+  ]
+}

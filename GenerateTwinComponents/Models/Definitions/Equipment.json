@@ -1,0 +1,30 @@
+{
+  "@id": "dtmi:sample:Equipment;1",
+  "@type": "Interface",
+  "displayName": "Equipment",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "name",
+      "schema": "string"
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "located in"
+      },
+      "minMultiplicity": 0,
+      "name": "locatedIn",
+      "target": "dtmi:sample:Room;1"
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "has capability"
+      },
+      "name": "hasCapability",
+      "target": "dtmi:sample:Capability;1"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:sample:Capability;1",
+  "@type": "Interface",
+  "displayName": "Capability",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "name",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "last value"
+      },
+      "name": "lastValue",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "last value time"
+      },
+      "name": "lastValueTime",
+      "schema": "dateTime",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "displayName": {
+        "en": "is capabilty of"
+      },
+      "name": "isCapabilityOf"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "@id": "dtmi:sample:CapabilityA;1",
+  "@type": "Interface",
+  "displayName": "CapabilityA",
+  "@context": "dtmi:dtdl:context;2",
+  "extends": "dtmi:sample:Capability;1"
+}

@@ -1,0 +1,30 @@
+{
+  "@id": "dtmi:sample:Floor;1",
+  "@type": "Interface",
+  "displayName": "Floor",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "name",
+      "schema": "string"
+    },
+    {
+      "@type": "Relationship",
+      "name": "isPartOf",
+      "displayName": {
+        "en": "is part of"
+      },
+      "target": "dtmi:sample:Building;1",
+      "maxMultiplicity": 1
+    },
+    {
+      "@type": "Relationship",
+      "name": "hasPart",
+      "displayName": {
+        "en": "has part"
+      },
+      "target": "dtmi:sample:Room;1"
+    }
+  ]
+}

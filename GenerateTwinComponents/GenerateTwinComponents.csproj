@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Azure.DigitalTwins.Core" Version="1.2.2" />
+		<PackageReference Include="Azure.Identity" Version="1.5.0" />
+		<PackageReference Include="System.Linq.Async" Version="5.0.0" />
+		<PackageReference Include="System.CommandLine" Version="2.0.0-beta1.20574.7" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Models\Definitions\Capability.json">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="Models\Definitions\CapabilityA.json">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="Models\Definitions\CapabilityB.json">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="Models\Definitions\Equipment.json">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="Models\Definitions\Room.json">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="Models\Definitions\Floor.json">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="Models\Definitions\Building.json">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>
